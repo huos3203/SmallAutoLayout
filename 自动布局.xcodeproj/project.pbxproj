@@ -27,6 +27,8 @@
 		8414307421999A960094334B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8414307521999B1F0094334B /* AutoSizeMasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizeMasksController.swift; sourceTree = "<group>"; };
 		8414307721999B330094334B /* AutoSizeMasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoSizeMasks.storyboard; sourceTree = "<group>"; };
+		84D9E5DC219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Debugging.m"; sourceTree = "<group>"; };
+		84D9E5DD219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Debugging.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		84143023219934120094334B /* autolayout.lib.test */ = {
 			isa = PBXGroup;
 			children = (
+				84D9E5E0219A6A87000A39D0 /* DebugTool */,
 				84143024219934120094334B /* autolayout_lib_test.h */,
 				84143025219934120094334B /* Info.plist */,
 				8414302C2199345E0094334B /* AutoLayoutController.swift */,
@@ -86,6 +89,15 @@
 				8414307721999B330094334B /* AutoSizeMasks.storyboard */,
 			);
 			path = autolayout.lib.autosizingMasks;
+			sourceTree = "<group>";
+		};
+		84D9E5E0219A6A87000A39D0 /* DebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				84D9E5DD219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.h */,
+				84D9E5DC219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.m */,
+			);
+			path = DebugTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
