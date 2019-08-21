@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="ANP-Qt-P96">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="ANP-Qt-P96">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Auto Layout Controller-->
+        <!--Auto Lay Controller-->
         <scene sceneID="bSH-3u-cm9">
             <objects>
-                <viewController storyboardIdentifier="AutoLayoutController" id="ANP-Qt-P96" customClass="AutoLayoutController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AutoLayoutController" id="ANP-Qt-P96" customClass="AutoLayController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IDO-Tz-3ZP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smb-gU-3qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237.59999999999999" y="230.73463268365819"/>
+            <point key="canvasLocation" x="-570" y="299"/>
         </scene>
     </scenes>
 </document>

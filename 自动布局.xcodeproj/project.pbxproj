@@ -13,9 +13,16 @@
 		8414307021999A7D0094334B /* autolayout_lib_autosizingMasks.h in Headers */ = {isa = PBXBuildFile; fileRef = 8414306E21999A7D0094334B /* autolayout_lib_autosizingMasks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8414307621999B1F0094334B /* AutoSizeMasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414307521999B1F0094334B /* AutoSizeMasksController.swift */; };
 		8414307821999B330094334B /* AutoSizeMasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414307721999B330094334B /* AutoSizeMasks.storyboard */; };
+		8429233A230D5846004BD37F /* AutoLayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84292338230D5846004BD37F /* AutoLayController.h */; };
+		8429233B230D5846004BD37F /* AutoLayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84292339230D5846004BD37F /* AutoLayController.m */; };
+		8429233F230D588C004BD37F /* StoreSelSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8429233D230D588C004BD37F /* StoreSelSearchBar.h */; };
+		84292340230D588C004BD37F /* StoreSelSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8429233E230D588C004BD37F /* StoreSelSearchBar.m */; };
+		86FC95FDD97E2B1458EAC680 /* Pods_autolayout_lib_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C410D7CAEF6C42BDEF5E25 /* Pods_autolayout_lib_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31C410D7CAEF6C42BDEF5E25 /* Pods_autolayout_lib_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autolayout_lib_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65666F4B4E61F12E673E6E4C /* Pods-autolayout.lib.test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autolayout.lib.test.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-autolayout.lib.test/Pods-autolayout.lib.test.debug.xcconfig"; sourceTree = "<group>"; };
 		84143022219934120094334B /* autolayout_lib_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = autolayout_lib_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84143024219934120094334B /* autolayout_lib_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolayout_lib_test.h; sourceTree = "<group>"; };
 		84143025219934120094334B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,8 +34,13 @@
 		8414307421999A960094334B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8414307521999B1F0094334B /* AutoSizeMasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizeMasksController.swift; sourceTree = "<group>"; };
 		8414307721999B330094334B /* AutoSizeMasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoSizeMasks.storyboard; sourceTree = "<group>"; };
+		84292338230D5846004BD37F /* AutoLayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayController.h; sourceTree = "<group>"; };
+		84292339230D5846004BD37F /* AutoLayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayController.m; sourceTree = "<group>"; };
+		8429233D230D588C004BD37F /* StoreSelSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSelSearchBar.h; sourceTree = "<group>"; };
+		8429233E230D588C004BD37F /* StoreSelSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSelSearchBar.m; sourceTree = "<group>"; };
 		84D9E5DC219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Debugging.m"; sourceTree = "<group>"; };
 		84D9E5DD219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Debugging.h"; sourceTree = "<group>"; };
+		D84567C675A0BD935A373035 /* Pods-autolayout.lib.test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autolayout.lib.test.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-autolayout.lib.test/Pods-autolayout.lib.test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FC95FDD97E2B1458EAC680 /* Pods_autolayout_lib_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27555D36148C11F668F9D688 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31C410D7CAEF6C42BDEF5E25 /* Pods_autolayout_lib_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84143000219933940094334B = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +77,8 @@
 				84143023219934120094334B /* autolayout.lib.test */,
 				8414306D21999A7D0094334B /* autolayout.lib.autosizingMasks */,
 				8414300B219933950094334B /* Products */,
+				EAD4C1F0524BA1704CC8637B /* Pods */,
+				27555D36148C11F668F9D688 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +94,8 @@
 		84143023219934120094334B /* autolayout.lib.test */ = {
 			isa = PBXGroup;
 			children = (
+				8429233C230D5867004BD37F /* Views */,
+				84292337230D5804004BD37F /* Controller */,
 				84D9E5E0219A6A87000A39D0 /* DebugTool */,
 				84143024219934120094334B /* autolayout_lib_test.h */,
 				84143025219934120094334B /* Info.plist */,
@@ -91,6 +116,24 @@
 			path = autolayout.lib.autosizingMasks;
 			sourceTree = "<group>";
 		};
+		84292337230D5804004BD37F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84292338230D5846004BD37F /* AutoLayController.h */,
+				84292339230D5846004BD37F /* AutoLayController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8429233C230D5867004BD37F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8429233D230D588C004BD37F /* StoreSelSearchBar.h */,
+				8429233E230D588C004BD37F /* StoreSelSearchBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		84D9E5E0219A6A87000A39D0 /* DebugTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +143,15 @@
 			path = DebugTool;
 			sourceTree = "<group>";
 		};
+		EAD4C1F0524BA1704CC8637B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65666F4B4E61F12E673E6E4C /* Pods-autolayout.lib.test.debug.xcconfig */,
+				D84567C675A0BD935A373035 /* Pods-autolayout.lib.test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -107,6 +159,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8429233F230D588C004BD37F /* StoreSelSearchBar.h in Headers */,
+				8429233A230D5846004BD37F /* AutoLayController.h in Headers */,
 				84143026219934120094334B /* autolayout_lib_test.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84143027219934120094334B /* Build configuration list for PBXNativeTarget "autolayout.lib.test" */;
 			buildPhases = (
+				0CE07123A0BF0D92738B39FD /* [CP] Check Pods Manifest.lock */,
 				8414301D219934120094334B /* Headers */,
 				8414301E219934120094334B /* Sources */,
 				8414301F219934120094334B /* Frameworks */,
@@ -169,7 +224,7 @@
 				TargetAttributes = {
 					84143021219934120094334B = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 					};
 					8414306B21999A7D0094334B = {
 						CreatedOnToolsVersion = 10.0;
@@ -214,12 +269,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CE07123A0BF0D92738B39FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autolayout.lib.test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8414301E219934120094334B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84292340230D588C004BD37F /* StoreSelSearchBar.m in Sources */,
 				8414302D2199345E0094334B /* AutoLayoutController.swift in Sources */,
+				8429233B230D5846004BD37F /* AutoLayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +440,7 @@
 		};
 		84143028219934120094334B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65666F4B4E61F12E673E6E4C /* Pods-autolayout.lib.test.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -386,6 +469,7 @@
 		};
 		84143029219934120094334B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D84567C675A0BD935A373035 /* Pods-autolayout.lib.test.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
