@@ -10,7 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "StoreSelSearchBar.h"
 
-@interface AutoLayController()
+@interface AutoLayController()<UISearchBarDelegate>
 @end
 
 @implementation AutoLayController
@@ -18,13 +18,26 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    StoreSelSearchBar *searchBar = [StoreSelSearchBar new];
+    StoreSelSearchBar *searchBar = [[StoreSelSearchBar alloc] initWithDel:self];
     [self.view addSubview:searchBar];
     [searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(@0);
-        make.height.equalTo(@30);
+        make.top.equalTo(@80);
+        make.centerX.equalTo(@0);
+        make.height.equalTo(@20);
         make.width.equalTo(@250);
     }];
 }
+
+#pragma mark - searchBar代理
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    
+}
+
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar
+{
+    return YES;
+}
+
 
 @end

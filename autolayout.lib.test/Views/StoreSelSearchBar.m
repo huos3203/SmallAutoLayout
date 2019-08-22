@@ -16,10 +16,15 @@
 
 @implementation StoreSelSearchBar
 
--(instancetype)init
+-(instancetype)initWithDel:(id)delegate
 {
     self = [super init];
+    self.userInteractionEnabled = true;
+    self.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0];
+    self.layer.cornerRadius = 15;
+    
     [self addSubview:self.searchBar];
+    self.searchBar.delegate = delegate;
     [self.searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(@0);
         make.left.equalTo(@-8);
@@ -37,10 +42,7 @@
         [_searchBar setImage:searchIcon forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];
         [_searchBar setImage:[UIImage imageNamed:@"clearicon"] forSearchBarIcon:UISearchBarIconClear state:UIControlStateNormal];
         _searchBar.placeholder = @"搜索门店名称";
-        //搜索框背景色
-        _searchBar.barTintColor = [UIColor clearColor];
-        // 风格颜色，可用于修改输入框的光标颜色，取消按钮和选择栏被选中时候都会变成设置的颜色
-        _searchBar.tintColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
+        
         
         [self clearType];
     }
@@ -49,6 +51,11 @@
 
 -(void)clearType
 {
+    //搜索框背景色
+    _searchBar.barTintColor = [UIColor clearColor];
+    // 风格颜色，可用于修改输入框的光标颜色，取消按钮和选择栏被选中时候都会变成设置的颜色
+    _searchBar.tintColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
+    //去除黑框
     for (UIView *view in _searchBar.subviews) {
         if ([view isKindOfClass:NSClassFromString(@"UIView")] && view.subviews.count > 1) {
             if ( [[view.subviews objectAtIndex:1] isKindOfClass:[UITextField class]]) {
@@ -57,8 +64,12 @@
                 searchBarTextField.layer.masksToBounds = YES;
                 searchBarTextField.layer.cornerRadius = 20;
                 searchBarTextField.font = [UIFont systemFontOfSize:14];
-                searchBarTextField.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0];
-                searchBarTextField.textColor = [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0];
+                searchBarTextField.backgroundColor = [UIColor clearColor];
+                searchBarTextField.textColor = [UIColor colorWithRed:94/255.0 green:99/255.0 blue:123/255.0 alpha:1.0];
+                
+                //修改placeholder字体颜色和大小
+                [searchBarTextField setValue:[UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0] forKeyPath:@"_placeholderLabel.textColor"];
+                [searchBarTextField setValue:[UIFont boldSystemFontOfSize:14] forKeyPath:@"_placeholderLabel.font"];
             }
             break;
         }

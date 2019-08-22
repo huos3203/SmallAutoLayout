@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface StoreSelSearchBar : UIView
-
+-(instancetype)initWithDel:(id)delegate;
 @end
 
 NS_ASSUME_NONNULL_END
