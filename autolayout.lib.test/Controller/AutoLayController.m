@@ -18,7 +18,9 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    StoreSelSearchBar *searchBar = [[StoreSelSearchBar alloc] initWithDel:self];
+    StoreSelSearchBar *searchBar = [[StoreSelSearchBar alloc] initOriginArr:@[] filterBy:@"" handler:^(NSArray * result) {
+        
+    }];
     [self.view addSubview:searchBar];
     [searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@80);
