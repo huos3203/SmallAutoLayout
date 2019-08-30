@@ -7,8 +7,6 @@
 //
 
 #import "AutoLayController.h"
-#import <Masonry/Masonry.h>
-#import "StoreSelSearchBar.h"
 
 @interface AutoLayController()<UISearchBarDelegate>
 @end

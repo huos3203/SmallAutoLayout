@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/admin/hsg/hexo/XcodeTool/iSmallApp/bundles/自动布局/autolayout.lib.test/Views/StoreSelSearchBar.h",
+      "line": 13,
+      "symbol": "StoreSelSearchBar",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/admin/hsg/hexo/XcodeTool/iSmallApp/bundles/自动布局"
+}
