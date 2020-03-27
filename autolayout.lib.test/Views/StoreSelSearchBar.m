@@ -8,7 +8,7 @@
 
 #import "StoreSelSearchBar.h"
 #import <Masonry/Masonry.h>
-
+#include <objc/message.h>
 @interface StoreSelSearchBar()<UISearchBarDelegate>
 @property (strong, nonatomic) UISearchBar *searchBar;
 @property (strong, nonatomic) NSArray *searchArray;
@@ -123,7 +123,32 @@
             break;
         }
     }
-    [[[[_searchBar.subviews objectAtIndex:0] subviews] objectAtIndex:0] removeFromSuperview];
+    if (@available(iOS 13, *)) {
+        [self setSearchBarForiOS13];
+    } else {
+        [[[[_searchBar.subviews objectAtIndex:0] subviews] objectAtIndex:0] removeFromSuperview];
+    }
 }
+
+
+- (void)setSearchBarForiOS13 {
+    for (UIView *subView in self.searchBar.subviews) {
+        for (UIView *secondLevelSubview in subView.subviews){
+            if ([secondLevelSubview isKindOfClass: [UIImageView class]]) {
+                secondLevelSubview.alpha = 0.0;
+                break;
+            }
+        }
+    }
+    //    self.searchBar.searchTextField.background = nil;
+    //    self.searchBar.searchTextField.backgroundColor = UIColor.clearColor;
+    id textField = ((id(*)(id,SEL))objc_msgSend)(self.searchBar, NSSelectorFromString(@"searchTextField"));
+    ((void(*)(id,SEL,id))objc_msgSend)(textField, NSSelectorFromString(@"setBackground:"),nil);
+    ((void(*)(id,SEL,id))objc_msgSend)(textField, NSSelectorFromString(@"setBackgroundColor:"),UIColor.clearColor);
+    
+    //    self.searchBar.searchTextField.clearButtonMode = UITextFieldViewModeNever;
+    //    self.searchBar.searchTextField.leftViewMode = UITextFieldViewModeNever;
+}
+
 
 @end

@@ -16,7 +16,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    StoreSelSearchBar *searchBar = [[StoreSelSearchBar alloc] initOriginArr:@[] filterBy:@"" handler:^(NSArray * result) {
+    StoreSelSearchBar *searchBar = [[StoreSelSearchBar alloc] initOriginArr:@[] filterBy:@"test" handler:^(NSArray * result) {
         
     }];
     [self.view addSubview:searchBar];
