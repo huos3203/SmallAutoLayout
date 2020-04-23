@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		31C410D7CAEF6C42BDEF5E25 /* Pods_autolayout_lib_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autolayout_lib_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65666F4B4E61F12E673E6E4C /* Pods-autolayout.lib.test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autolayout.lib.test.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-autolayout.lib.test/Pods-autolayout.lib.test.debug.xcconfig"; sourceTree = "<group>"; };
+		65666F4B4E61F12E673E6E4C /* Pods-autolayout.lib.test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autolayout.lib.test.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-autolayout.lib.test/Pods-autolayout.lib.test.debug.xcconfig"; sourceTree = "<group>"; };
 		84143022219934120094334B /* autolayout_lib_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = autolayout_lib_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84143024219934120094334B /* autolayout_lib_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolayout_lib_test.h; sourceTree = "<group>"; };
 		84143025219934120094334B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		8429233E230D588C004BD37F /* StoreSelSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSelSearchBar.m; sourceTree = "<group>"; };
 		84D9E5DC219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Debugging.m"; sourceTree = "<group>"; };
 		84D9E5DD219A6A7A000A39D0 /* NSLayoutConstraint+Debugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Debugging.h"; sourceTree = "<group>"; };
-		D84567C675A0BD935A373035 /* Pods-autolayout.lib.test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autolayout.lib.test.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-autolayout.lib.test/Pods-autolayout.lib.test.release.xcconfig"; sourceTree = "<group>"; };
+		D84567C675A0BD935A373035 /* Pods-autolayout.lib.test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autolayout.lib.test.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-autolayout.lib.test/Pods-autolayout.lib.test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
